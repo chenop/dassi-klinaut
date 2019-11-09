@@ -1,10 +1,17 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import mainImage from "../assets/main.jpg";
+import styled from "@emotion/styled";
+
+const Image = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+`;
 
 const Gallery = () => {
     return (
-        <Fragment>
-            <div>This is the gallery</div>
-        </Fragment>
+        <div>
+            <Image src={mainImage}  alt={"hi"} />
+        </div>
     );
 };
 
