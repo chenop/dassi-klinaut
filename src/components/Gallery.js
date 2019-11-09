@@ -9,9 +9,7 @@ const Image = styled.img`
 
 const Gallery = () => {
     return (
-        <div>
-            <Image src={mainImage}  alt={"hi"} />
-        </div>
+        <Image src={mainImage}  alt={"hi"} />
     );
 };
 

@@ -1,19 +1,22 @@
 import React from 'react';
 import styled from "@emotion/styled";
 import {withTheme} from "@material-ui/core";
+import Title from "../components/Title";
+import ContactUs from "../components/ContactUs";
+import Bio from "../components/Bio";
 
 const Container = styled.div`
-${({theme}) => `
+	margin: 50px;
 	flex: 3;
-	color: ${theme.palette.secondary.main}
-	`}
 `;
 
 const RightSide = (props) => {
     return (
         <Container {...props}>
-            This is the bio and contact us
-        </Container>
+			<Title/>
+			<ContactUs />
+			<Bio />
+		</Container>
     );
 };
 

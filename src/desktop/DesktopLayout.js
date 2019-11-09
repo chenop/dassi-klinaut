@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 
 const Container = styled.div`
 	display: flex;
-	flex-direction: row;	
+	flex-direction: row-reverse;	
 	min-height: 100vh;
 	min-width: 100vw;	
 `;
