@@ -1,18 +1,20 @@
 import React from 'react';
 import styled from "@emotion/styled";
+import {withTheme} from "@material-ui/core";
 
 const Container = styled.div`
+${({theme}) => `
 	flex: 3;
-	  background-color: aliceblue;
-
+	color: ${theme.palette.secondary.main}
+	`}
 `;
 
-const RightSide = () => {
+const RightSide = (props) => {
     return (
-        <Container>
+        <Container {...props}>
             This is the bio and contact us
         </Container>
     );
 };
 
-export default RightSide;
+export default withTheme(RightSide);

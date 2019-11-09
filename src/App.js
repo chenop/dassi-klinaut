@@ -1,26 +1,22 @@
 import React from 'react';
-import {useMediaQuery, useTheme} from "@material-ui/core";
-import styled from '@emotion/styled'
-import DesktopLayout from "./desktop/DesktopLayout";
-import MobileLayout from "./mobile/MobileLayout";
-
-const Container = styled.div`
-`;
+import {createMuiTheme} from "@material-ui/core";
+import {ThemeProvider} from '@material-ui/styles';
+import {blue, purple} from "@material-ui/core/colors";
+import Container from "./Container";
 
 function App() {
-    const theme = useTheme();
-    const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
+	const theme = createMuiTheme({
+	    palette: {
+	        primary: purple,
+	        secondary: blue
+	    }
+	});
 
-    return (
-        <Container>
-            {isDesktop &&
-                <DesktopLayout />
-            }
-            {!isDesktop &&
-                <MobileLayout />
-            }
-        </Container>
-    );
+	return (
+		<ThemeProvider theme={theme}>
+			<Container/>
+		</ThemeProvider>
+	);
 }
 
 export default App;

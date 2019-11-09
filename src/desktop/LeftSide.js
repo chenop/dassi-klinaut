@@ -1,19 +1,19 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Gallery from "../components/Gallery";
 import styled from "@emotion/styled";
+import {withTheme} from "@material-ui/core";
 
 const Container = styled.div`
 	flex: 7;
-	  background-color: red;
-
+	color: ${props => props.color }
 `;
 
-const LeftSide = () => {
+const LeftSide = ({theme}) => {
 	return (
-		<Container>
+		<Container color={theme.palette.primary.main}>
 			<Gallery/>
 		</Container>
 	);
 };
 
-export default LeftSide;
+export default withTheme(LeftSide);
