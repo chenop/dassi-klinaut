@@ -9,7 +9,7 @@ const Container = styled.div`
 const MobileLayout = () => {
     return (
         <Container>
-			Mobile view
+			Mobile view not ready yet
         </Container>
     );
 };
