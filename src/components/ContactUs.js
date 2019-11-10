@@ -3,9 +3,10 @@ import styled from "@emotion/styled";
 import IconButton from "@material-ui/core/IconButton";
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import {Typography} from "@material-ui/core";
+import {Typography, withStyles} from "@material-ui/core";
 import Fab from "@material-ui/core/Fab";
 import {lightGreen, red} from "@material-ui/core/colors";
+import Button from "@material-ui/core/Button";
 
 const Container = styled.div`
 	flex-direction: row;
@@ -14,13 +15,29 @@ const Container = styled.div`
 	text-align: center;
 `;
 
+const ColorButton = withStyles(theme => ({
+    root: {
+        color: "white",
+        flex: 1,
+        width: "80%",
+        height: "50px",
+        backgroundColor: lightGreen[500],
+        '&:hover': {
+            backgroundColor: lightGreen[700],
+        },
+    },
+}))(Button);
 const ContactUs = () => {
     return (
         <Container>
-            <Fab variant="extended" aria-label="like" >
-                <WhatsAppIcon fontSize="large" style={{marginLeft: "10px", color: lightGreen[400]}}/>
-                <Typography variant={"h6"} style={{color: lightGreen[600]}}>צור קשר</Typography>
-            </Fab>
+            <ColorButton variant="contained" color={lightGreen[600]}>
+                <WhatsAppIcon fontSize="large" style={{marginLeft: "10px", color: "white"}}/>
+                <Typography variant={"h6"} style={{color: "white"}}>צור קשר</Typography>
+            </ColorButton>
+            {/*<Fab variant="extended" aria-label="like" >*/}
+            {/*    <WhatsAppIcon fontSize="large" style={{marginLeft: "10px", color: lightGreen[400]}}/>*/}
+            {/*    <Typography variant={"h6"} style={{color: lightGreen[600]}}>צור קשר</Typography>*/}
+            {/*</Fab>*/}
             {/*<IconButton aria-label="Lets talk on WhatsApp!">*/}
             {/*    <WhatsAppIcon fontSize="large" />*/}
             {/*    <Typography variant={"h6"}>מוזמנים לקשקש</Typography>*/}

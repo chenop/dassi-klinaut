@@ -1,25 +1,26 @@
 import React from 'react';
-import mainImage from "../assets/main.jpg";
-import {css} from "@emotion/core";
 import styled from "@emotion/styled";
+import {lightGreen} from "@material-ui/core/colors";
 
 const Container = styled.div`
-  display: flex;
- width: 100%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: ${props => props.backgroundColor}
 `;
 
 const Gallery = () => {
-    return (
-        <Container>
-            image
-            {/*<img*/}
-            {/*    src={mainImage}*/}
-            {/*    className={css({*/}
-            {/*        objectFit: "contain",*/}
-            {/*    })}*/}
-            {/*/>*/}
-        </Container>
-    );
+	return (
+		<Container backgroundColor={lightGreen[100]}>
+			image
+			{/*<img*/}
+			{/*    src={mainImage}*/}
+			{/*    className={css({*/}
+			{/*        objectFit: "contain",*/}
+			{/*    })}*/}
+			{/*/>*/}
+		</Container>
+	);
 };
 
 export default Gallery;

@@ -17,9 +17,9 @@ const Text = styled(Typography)`
 const Title = () => {
 	return (
 		<Container>
-			<Text variant={"h5"}>הדס אופנהיים</Text>
-			<Text variant={"h5"}>קלינאית תקשורת</Text>
-			<Text variant={"h7"}>חיפה</Text>
+			<Text variant={"h4"}>הדס אופנהיים</Text>
+			<Text variant={"h4"}>קלינאית תקשורת</Text>
+			<Text variant={"h6"}>חיפה</Text>
 		</Container>
 	);
 };

@@ -6,8 +6,8 @@ import {withTheme} from "@material-ui/core";
 const Container = styled.div`
 	flex: 7;
 	max-width: 100%;
+	height: 100vh;
 	color: ${props => props.color };
-	background-color: red;
 `;
 
 const LeftSide = ({theme}) => {
