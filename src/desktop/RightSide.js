@@ -6,9 +6,8 @@ import ContactUs from "../components/ContactUs";
 import Bio from "../components/Bio";
 
 const Container = styled.div`
-	margin: 50px;
-	flex: 3;
-	width: 100%;
+	width: 30%;
+	padding: 50px;
 `;
 
 const RightSide = (props) => {

@@ -4,9 +4,7 @@ import styled from "@emotion/styled";
 import {withTheme} from "@material-ui/core";
 
 const Container = styled.div`
-	flex: 7;
-	max-width: 100%;
-	height: 100vh;
+	width: 70%;
 	color: ${props => props.color };
 `;
 

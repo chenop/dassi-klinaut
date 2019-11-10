@@ -7,6 +7,7 @@ import {Typography, withStyles} from "@material-ui/core";
 import Fab from "@material-ui/core/Fab";
 import {lightGreen, red} from "@material-ui/core/colors";
 import Button from "@material-ui/core/Button";
+import {darken} from "@material-ui/core/styles";
 
 const Container = styled.div`
 	flex-direction: row;
@@ -21,9 +22,9 @@ const ColorButton = withStyles(theme => ({
         flex: 1,
         width: "80%",
         height: "50px",
-        backgroundColor: lightGreen[500],
+        backgroundColor: "#DB898B",
         '&:hover': {
-            backgroundColor: lightGreen[700],
+            backgroundColor: darken("#DB898B", 0.1),
         },
     },
 }))(Button);
