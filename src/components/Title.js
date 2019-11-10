@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "@emotion/styled";
+import {Typography} from "@material-ui/core";
 
 const Container = styled.div`
 	flex-direction: column;
@@ -10,17 +11,15 @@ const Container = styled.div`
 	line-height: 30px;
 `;
 
-const Text = styled.div`
-    font-size: ${props => props.fontSize ? "15px" : "20px"};
-    font-weight: bold;
+const Text = styled(Typography)`
     letter-spacing: 1px;
 `;
 const Title = () => {
 	return (
 		<Container>
-			<Text>הדס אופנהיים</Text>
-			<Text>קלינאית תקשורת</Text>
-			<Text fontSize={"small"}>חיפה</Text>
+			<Text variant={"h5"}>הדס אופנהיים</Text>
+			<Text variant={"h5"}>קלינאית תקשורת</Text>
+			<Text variant={"h7"}>חיפה</Text>
 		</Container>
 	);
 };

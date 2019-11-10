@@ -5,13 +5,15 @@ import {withTheme} from "@material-ui/core";
 
 const Container = styled.div`
 	flex: 7;
-	color: ${props => props.color }
+	max-width: 100%;
+	color: ${props => props.color };
+	background-color: red;
 `;
 
 const LeftSide = ({theme}) => {
 	return (
 		<Container color={theme.palette.primary.main}>
-			<Gallery/>
+			<Gallery />
 		</Container>
 	);
 };

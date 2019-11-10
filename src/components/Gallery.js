@@ -1,15 +1,24 @@
 import React from 'react';
 import mainImage from "../assets/main.jpg";
+import {css} from "@emotion/core";
 import styled from "@emotion/styled";
 
-const Image = styled.img`
-  max-width: 100%;
-  max-height: 100%;
+const Container = styled.div`
+  display: flex;
+ width: 100%;
 `;
 
 const Gallery = () => {
     return (
-        <Image src={mainImage}  alt={"hi"} />
+        <Container>
+            image
+            {/*<img*/}
+            {/*    src={mainImage}*/}
+            {/*    className={css({*/}
+            {/*        objectFit: "contain",*/}
+            {/*    })}*/}
+            {/*/>*/}
+        </Container>
     );
 };
 
