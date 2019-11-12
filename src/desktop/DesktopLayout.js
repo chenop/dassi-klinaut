@@ -7,6 +7,8 @@ const Container = styled.div`
 	display: flex;
 	flex: 1;
 	flex-direction: row-reverse;	
+	max-width: 100vw;
+	max-height: 100vh;
 `;
 
 const DesktopLayout = () => {

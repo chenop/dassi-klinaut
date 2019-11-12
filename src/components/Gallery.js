@@ -7,19 +7,15 @@ import {css} from "@emotion/core";
 const Container = styled.div`
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    align-items: flex-start;
+    overflow-y: hidden;
+    height: 100vh;
 `;
 
 const Gallery = () => {
 	return (
-		<Container backgroundColor={lightGreen[100]}>
-			{/*image*/}
-			<img
-			    src={mainImage}
-			    className={css({
-                    objectFit: "contain"
-			    })}
-			/>
+		<Container>
+			<img src={mainImage} />
 		</Container>
 	);
 };
