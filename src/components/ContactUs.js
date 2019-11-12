@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import IconButton from "@material-ui/core/IconButton";
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import {Typography, withStyles} from "@material-ui/core";
-import Fab from "@material-ui/core/Fab";
-import {lightGreen, red} from "@material-ui/core/colors";
+import {lightGreen} from "@material-ui/core/colors";
 import Button from "@material-ui/core/Button";
 import {darken} from "@material-ui/core/styles";
+
+const phoneNumber = '972525659084';
+const message = 'הגענו מהאתר שלך, נשמח לשוחח!';
 
 const Container = styled.div`
 	flex-direction: row;
@@ -29,9 +29,11 @@ const ColorButton = withStyles(theme => ({
     },
 }))(Button);
 const ContactUs = () => {
+    const whatsAppLink = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+
     return (
         <Container>
-            <ColorButton variant="contained" color={lightGreen[600]}>
+            <ColorButton variant="contained" color={lightGreen[600]} target="_blank" href={whatsAppLink}>
                 <WhatsAppIcon fontSize="large" style={{marginLeft: "10px", color: "white"}}/>
                 <Typography variant={"h6"} style={{color: "white"}}>צור קשר</Typography>
             </ColorButton>
