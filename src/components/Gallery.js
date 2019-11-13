@@ -1,14 +1,23 @@
 import React from 'react';
-import styled from "@emotion/styled";
-import mainImage from "../assets/main.jpg";
+import Image from "./Image";
 import {Context} from "../Context";
+import styled from "@emotion/styled";
+import Title from "./Title";
 
 const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow-y: hidden;
-    height: ${props => props.isDesktop ? "100vh" : "50vh"};
+	display: flex;
+    width: 100vw;
+    height: ${props => props.isDesktop ? "100vh" : "40vh"};
+	position: relative;
+`;
+const TitleContainer = styled.div`
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 `;
 
 const Gallery = () => {
@@ -16,7 +25,12 @@ const Gallery = () => {
 
 	return (
 		<Container isDesktop={isDesktop}>
-			<img src={mainImage} />
+			<Image/>
+			{!isDesktop &&
+			<TitleContainer>
+				<Title color="white"/>
+			</TitleContainer>
+			}
 		</Container>
 	);
 };

@@ -7,19 +7,20 @@ const Container = styled.div`
 	justify-content: center;
 	align-items: center;
 	text-align: right;
-	margin-bottom: 30px;
+	margin-bottom: ${props => props.isDesktop ? "30px" : "0px"};
 	line-height: 30px;
 `;
 
 const Text = styled(Typography)`
     letter-spacing: 1px;
+    color: ${props=> props.color}
 `;
-const Title = () => {
+const Title = ({color = "black"}) => {
 	return (
 		<Container>
-			<Text variant={"h4"}>הדס אופנהיים</Text>
-			<Text variant={"h4"}>קלינאית תקשורת</Text>
-			<Text variant={"h6"}>חיפה</Text>
+			<Text variant={"h4"} color={color}>הדס אופנהיים</Text>
+			<Text variant={"h4"} color={color}>קלינאית תקשורת</Text>
+			<Text variant={"h6"} color={color}>חיפה</Text>
 		</Container>
 	);
 };

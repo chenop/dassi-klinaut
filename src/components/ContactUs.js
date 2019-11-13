@@ -34,7 +34,7 @@ const ContactUs = () => {
 
     return (
         <Container>
-            <ColorButton variant="contained" color={lightGreen[600]} target="_blank" href={whatsAppLink}>
+            <ColorButton variant="contained" target="_blank" href={whatsAppLink}>
                 <WhatsAppIcon fontSize="large" style={{marginLeft: "10px", color: "white"}}/>
                 <Typography variant={"h6"} style={{color: "white"}}>צור קשר</Typography>
             </ColorButton>
