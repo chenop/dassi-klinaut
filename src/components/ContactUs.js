@@ -28,6 +28,7 @@ const ColorButton = withStyles(theme => ({
         },
     },
 }))(Button);
+
 const ContactUs = () => {
     const whatsAppLink = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
 
@@ -37,17 +38,6 @@ const ContactUs = () => {
                 <WhatsAppIcon fontSize="large" style={{marginLeft: "10px", color: "white"}}/>
                 <Typography variant={"h6"} style={{color: "white"}}>צור קשר</Typography>
             </ColorButton>
-            {/*<Fab variant="extended" aria-label="like" >*/}
-            {/*    <WhatsAppIcon fontSize="large" style={{marginLeft: "10px", color: lightGreen[400]}}/>*/}
-            {/*    <Typography variant={"h6"} style={{color: lightGreen[600]}}>צור קשר</Typography>*/}
-            {/*</Fab>*/}
-            {/*<IconButton aria-label="Lets talk on WhatsApp!">*/}
-            {/*    <WhatsAppIcon fontSize="large" />*/}
-            {/*    <Typography variant={"h6"}>מוזמנים לקשקש</Typography>*/}
-            {/*</IconButton>*/}
-            {/*<IconButton aria-label="Lets talk on Facebook!">*/}
-            {/*    <FacebookIcon fontSize="large" />*/}
-            {/*</IconButton>*/}
         </Container>
     );
 };
