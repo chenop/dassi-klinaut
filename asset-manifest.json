@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/dassi-klinaut/static/css/main.2110a780.chunk.css",
-    "main.js": "/dassi-klinaut/static/js/main.d77cd48d.chunk.js",
-    "main.js.map": "/dassi-klinaut/static/js/main.d77cd48d.chunk.js.map",
-    "runtime-main.js": "/dassi-klinaut/static/js/runtime-main.edc2e00e.js",
-    "runtime-main.js.map": "/dassi-klinaut/static/js/runtime-main.edc2e00e.js.map",
-    "static/js/2.58c9cfc1.chunk.js": "/dassi-klinaut/static/js/2.58c9cfc1.chunk.js",
-    "static/js/2.58c9cfc1.chunk.js.map": "/dassi-klinaut/static/js/2.58c9cfc1.chunk.js.map",
+    "main.js": "/dassi-klinaut/static/js/main.a2c1138b.chunk.js",
+    "main.js.map": "/dassi-klinaut/static/js/main.a2c1138b.chunk.js.map",
+    "runtime-main.js": "/dassi-klinaut/static/js/runtime-main.b30f6e7e.js",
+    "runtime-main.js.map": "/dassi-klinaut/static/js/runtime-main.b30f6e7e.js.map",
+    "static/js/2.19266e57.chunk.js": "/dassi-klinaut/static/js/2.19266e57.chunk.js",
+    "static/js/2.19266e57.chunk.js.map": "/dassi-klinaut/static/js/2.19266e57.chunk.js.map",
     "index.html": "/dassi-klinaut/index.html",
-    "precache-manifest.40067705f43b50f9c0bce99ac728f9de.js": "/dassi-klinaut/precache-manifest.40067705f43b50f9c0bce99ac728f9de.js",
+    "precache-manifest.068226c4d7c2fffdaa1127db637a379a.js": "/dassi-klinaut/precache-manifest.068226c4d7c2fffdaa1127db637a379a.js",
     "service-worker.js": "/dassi-klinaut/service-worker.js",
     "static/css/main.2110a780.chunk.css.map": "/dassi-klinaut/static/css/main.2110a780.chunk.css.map",
     "static/media/main.jpg": "/dassi-klinaut/static/media/main.c4de7e96.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.edc2e00e.js",
-    "static/js/2.58c9cfc1.chunk.js",
+    "static/js/runtime-main.b30f6e7e.js",
+    "static/js/2.19266e57.chunk.js",
     "static/css/main.2110a780.chunk.css",
-    "static/js/main.d77cd48d.chunk.js"
+    "static/js/main.a2c1138b.chunk.js"
   ]
 }
