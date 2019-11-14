@@ -7,7 +7,7 @@ import Title from "./Title";
 const Container = styled.div`
 	display: flex;
     flex: 1;
-    height: ${props => props.isDesktop ? "100vh" : "40vh"};
+    min-height: ${props => props.isDesktop ? "100vh" : "40vh"};
 	position: relative;
 `;
 const TitleContainer = styled.div`
