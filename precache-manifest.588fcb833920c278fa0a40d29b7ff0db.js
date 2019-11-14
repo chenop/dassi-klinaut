@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29997cf701441dc0c55f6fc20505ecc7",
+    "revision": "b161c60d5ced77ffbd232e3b0a67936e",
     "url": "/dassi-klinaut/index.html"
   },
   {
-    "revision": "49672715effeee153236",
+    "revision": "98eb526706ff68ef5025",
     "url": "/dassi-klinaut/static/css/main.2110a780.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dassi-klinaut/static/js/2.e2e03255.chunk.js"
   },
   {
-    "revision": "49672715effeee153236",
-    "url": "/dassi-klinaut/static/js/main.a2fd5e6c.chunk.js"
+    "revision": "98eb526706ff68ef5025",
+    "url": "/dassi-klinaut/static/js/main.ed49f3c9.chunk.js"
   },
   {
     "revision": "deee19c7d574056ef826",
