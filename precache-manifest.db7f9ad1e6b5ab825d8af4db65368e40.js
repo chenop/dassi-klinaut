@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cfad3a7ae8b2101add35448854840d2f",
+    "revision": "29997cf701441dc0c55f6fc20505ecc7",
     "url": "/dassi-klinaut/index.html"
   },
   {
-    "revision": "42ddccd41186f6f6d1e6",
+    "revision": "49672715effeee153236",
     "url": "/dassi-klinaut/static/css/main.2110a780.chunk.css"
   },
   {
-    "revision": "367dbf371eee9cee222c",
-    "url": "/dassi-klinaut/static/js/2.19266e57.chunk.js"
+    "revision": "57cb39f83a6f2e15b768",
+    "url": "/dassi-klinaut/static/js/2.e2e03255.chunk.js"
   },
   {
-    "revision": "42ddccd41186f6f6d1e6",
-    "url": "/dassi-klinaut/static/js/main.a2c1138b.chunk.js"
+    "revision": "49672715effeee153236",
+    "url": "/dassi-klinaut/static/js/main.a2fd5e6c.chunk.js"
   },
   {
     "revision": "deee19c7d574056ef826",
