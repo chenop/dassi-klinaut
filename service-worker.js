@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dassi-klinaut/precache-manifest.56e1636e1354ded80256bed0360b78a4.js"
+  "/dassi-klinaut/precache-manifest.c07aae0cf2fb014ed2d5347e1c280857.js"
 );
 
 self.addEventListener('message', (event) => {
