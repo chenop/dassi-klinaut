@@ -6,7 +6,7 @@ import Title from "./Title";
 
 const Container = styled.div`
 	display: flex;
-    width: 100vw;
+    flex: 1;
     height: ${props => props.isDesktop ? "100vh" : "40vh"};
 	position: relative;
 `;
@@ -16,8 +16,7 @@ const TitleContainer = styled.div`
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	height: 100%;
-	width: 100%;
+	flex: 1;
 `;
 
 const Gallery = () => {

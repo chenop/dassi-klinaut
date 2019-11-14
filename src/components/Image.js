@@ -5,15 +5,12 @@ import {Context} from "../Context";
 
 const Container = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow-y: hidden;
+    flex: 1;
 `;
 
 const BackgroundImage = styled.div`
 	background-image: url(${mainImage});
-	width: 100vw;
-    height: 100%;//${props => props.isDesktop ? "100vh" : "40vh"};
+	flex: 1;
     background-position: center;
     background-size: cover;
 `;
