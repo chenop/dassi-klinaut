@@ -1,7 +1,7 @@
 import React from 'react';
 import {createMuiTheme} from "@material-ui/core";
 import {ThemeProvider} from '@material-ui/styles';
-import {blue, grey, purple} from "@material-ui/core/colors";
+import {grey, purple} from "@material-ui/core/colors";
 import Container from "./Container";
 import { create } from 'jss';
 import rtl from 'jss-rtl';

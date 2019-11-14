@@ -4,6 +4,7 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import {Typography, withStyles} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import {darken} from "@material-ui/core/styles";
+import {Context} from "../Context";
 
 const phoneNumber = '972525659084';
 const message = 'הגענו מהאתר שלך, נשמח לשוחח!';
@@ -31,7 +32,11 @@ const ColorButton = withStyles(theme => ({
 }))(Button);
 
 const ContactUs = () => {
-    const whatsAppLink = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+	const {isDesktop} = React.useContext(Context);
+
+    const whatsAppLink = isDesktop ?
+		`https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}` :
+		`https://wa.me/${phoneNumber}?text=${message}`;
 
     return (
         <Container>

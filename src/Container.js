@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import DesktopLayout from "./desktop/DesktopLayout";
 import MobileLayout from "./mobile/MobileLayout";
 import {useMediaQuery, useTheme} from "@material-ui/core";

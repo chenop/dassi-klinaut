@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build && echo 'site was uploaded to https://chenop.github.io/dassi-klinaut'"
   },
   "eslintConfig": {
     "extends": "react-app"
