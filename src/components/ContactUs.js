@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "@emotion/styled";
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import {Typography, withStyles} from "@material-ui/core";
-import {lightGreen} from "@material-ui/core/colors";
 import Button from "@material-ui/core/Button";
 import {darken} from "@material-ui/core/styles";
 
@@ -14,6 +13,8 @@ const Container = styled.div`
 	flex: 1;
 	justify-content: center;
 	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
 `;
 
 const ColorButton = withStyles(theme => ({

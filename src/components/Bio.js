@@ -1,6 +1,6 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import styled from "@emotion/styled";
-import {ListItemText, Typography} from "@material-ui/core";
+import {Typography} from "@material-ui/core";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
@@ -19,7 +19,7 @@ const Line = ({text}) => {
 
 const Bio = () => {
     return (
-    	<List>
+    	<List style={{paddingTop: "0"}}>
 			<Line text="מתמחה באבחון וטיפול בילדים בגילאים 3 עד 6." />
 			<Line text="בוגרת תואר ראשון בקלינאות תקשורת" />
 			<Line text="בעלת הסמכה בהתפתחות הילד" />

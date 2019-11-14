@@ -9,12 +9,14 @@ const Container = styled.div`
     flex: 1;
     min-height: ${props => props.isDesktop ? "100vh" : "40vh"};
 	position: relative;
+	justify-content: center;
 `;
+
 const TitleContainer = styled.div`
 	display: flex;
 	position: absolute;
 	flex-direction: column;
-	justify-content: flex-end;
+	align-self: flex-end;
 	align-items: center;
 	flex: 1;
 `;

@@ -1,26 +1,32 @@
 import React from 'react';
 import styled from "@emotion/styled";
 import {Typography} from "@material-ui/core";
+import {Context} from "../Context";
 
 const Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: right;
-	margin-bottom: ${props => props.isDesktop ? "30px" : "0px"};
+	text-align: ${props => props.isDesktop ? "right" : "center"};
 	line-height: 30px;
 `;
 
 const Text = styled(Typography)`
-    letter-spacing: 1px;
-    color: ${props=> props.color}
+    color: ${props=> props.isDesktop ? "black" : "white"};
+	letter-spacing: ${props => props.isDesktop ? "1px" : "2px"};
+	text-shadow: ${props => props.isDesktop ? "0px" : "2px 2px 2px rgba(0,0,0,.7)" }
 `;
-const Title = ({color = "black"}) => {
+const Title = () => {
+	const {isDesktop} = React.useContext(Context);
+
+	const variant1 = isDesktop ? "h4" : "h5";
+	const variant2 = isDesktop ? "h6" : "h7";
+
 	return (
-		<Container>
-			<Text variant={"h4"} color={color}>הדס אופנהיים</Text>
-			<Text variant={"h4"} color={color}>קלינאית תקשורת</Text>
-			<Text variant={"h6"} color={color}>חיפה</Text>
+		<Container isDesktop={isDesktop}>
+			<Text isDesktop={isDesktop} variant={variant1}>הדס אופנהיים</Text>
+			<Text isDesktop={isDesktop} variant={variant1}>קלינאית תקשורת</Text>
+			<Text isDesktop={isDesktop} variant={variant2}>חיפה</Text>
 		</Container>
 	);
 };
