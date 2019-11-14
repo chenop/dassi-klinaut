@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "efd58f783fd1d252c138405eef3ce49f",
+    "revision": "c6d4f482bab4589f1fe0a432fa328a90",
     "url": "/dassi-klinaut/index.html"
   },
   {
