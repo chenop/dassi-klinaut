@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import mainImage from "../assets/main.jpg";
+import mainImage from "../assets/Hadas1.jpg";
 import {Context} from "../Context";
 
 const Container = styled.div`
