@@ -1,15 +1,11 @@
 import React from 'react';
 import styled from "@emotion/styled";
 import {Typography} from "@material-ui/core";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
 	root: {
-		fontSize: 22
+		fontSize: 20
 	},
 });
 
@@ -28,19 +24,16 @@ const Text0 = styled(Typography)`
 `;
 
 const Wrapper = styled.div`
-    margin: 20px 40px;
-    overflow-y: scroll;
+	overflow-y: ${props => props.isDesktop ? "auto" : "inherit"};
+	height: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 `;
 
-const Line = ({text}) => {
+const Bio = ({isDesktop = false}) => {
     return (
-		<ListItem><ListItemIcon><ChevronLeftIcon /></ListItemIcon><Text variant={"h6"}>{text}</Text></ListItem>
-    );
-};
-
-const Bio = () => {
-    return (
-		<Wrapper>
+		<Wrapper isDesktop={isDesktop}>
 			<Text>נעים להכיר 🙂</Text>
 			<Text>
 				שמי הדס, נשואה ואמא לשלושה.

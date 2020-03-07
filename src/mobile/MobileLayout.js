@@ -10,6 +10,7 @@ const Container = styled.div`
 	flex-direction: column;
 	max-width: 100vw;
 	position: relative;
+	height: 100%;
 `;
 const MobileLayout = () => {
     return (

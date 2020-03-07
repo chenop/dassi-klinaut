@@ -9,6 +9,8 @@ const Container = styled.div`
 	align-items: center;
 	text-align: ${props => props.isDesktop ? "right" : "center"};
 	line-height: 30px;
+	margin-right: 50px;
+	margin-left: 50px;
 `;
 
 const Text = styled(Typography)`

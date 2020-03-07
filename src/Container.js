@@ -3,11 +3,12 @@ import DesktopLayout from "./desktop/DesktopLayout";
 import MobileLayout from "./mobile/MobileLayout";
 import {useMediaQuery, useTheme} from "@material-ui/core";
 import {Context} from "./Context";
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 const UiContainer = styled.div`
     height: 100vh;
     width: 100%;
+    overflow: ${props => props.isDesktop ? "hidden" : "auto"} ;
 `;
 
 function Container() {
@@ -20,7 +21,7 @@ function Container() {
 
 	return (
 		<Context.Provider value={state}>
-			<UiContainer>
+			<UiContainer isDesktop={isDesktop}>
 			{isDesktop &&
 			<DesktopLayout/>
 			}

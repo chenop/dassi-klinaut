@@ -6,9 +6,11 @@ import ContactUs from "../components/ContactUs";
 import Bio from "../components/Bio";
 
 const Container = styled.div`
+	display: flex;
+	flex-direction: column;
 	flex: 3;
-	margin: 50px;
 	min-width: 400px;
+	height: 100%;
 `;
 
 const RightSide = (props) => {
@@ -16,7 +18,7 @@ const RightSide = (props) => {
         <Container {...props}>
 			<Title/>
 			<ContactUs />
-			<Bio />
+			<Bio isDesktop/>
 		</Container>
     );
 };
