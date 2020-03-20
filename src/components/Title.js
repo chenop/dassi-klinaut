@@ -11,6 +11,7 @@ const Container = styled.div`
 	line-height: 30px;
 	margin-right: 50px;
 	margin-left: 50px;
+	margin-top: 20px;
 `;
 
 const Text = styled(Typography)`
@@ -22,13 +23,12 @@ const Title = () => {
 	const {isDesktop} = React.useContext(Context);
 
 	const variant1 = isDesktop ? "h4" : "h5";
-	const variant2 = isDesktop ? "h6" : "h7";
 
 	return (
 		<Container isDesktop={isDesktop}>
 			<Text isDesktop={isDesktop} variant={variant1}>הדס אופנהיים</Text>
 			<Text isDesktop={isDesktop} variant={variant1}>קלינאית תקשורת</Text>
-			<Text isDesktop={isDesktop} variant={variant2}>חיפה</Text>
+			<Text isDesktop={isDesktop} variant={"h6"}>חיפה</Text>
 		</Container>
 	);
 };
