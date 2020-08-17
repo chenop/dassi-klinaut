@@ -5,10 +5,10 @@
     "main.js.map": "/static/js/main.4669bb5f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b9980355.js",
     "runtime-main.js.map": "/static/js/runtime-main.b9980355.js.map",
-    "static/js/2.cdd9d003.chunk.js": "/static/js/2.cdd9d003.chunk.js",
-    "static/js/2.cdd9d003.chunk.js.map": "/static/js/2.cdd9d003.chunk.js.map",
+    "static/js/2.2783cb75.chunk.js": "/static/js/2.2783cb75.chunk.js",
+    "static/js/2.2783cb75.chunk.js.map": "/static/js/2.2783cb75.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3878e58b0b69e8748a4a1178f81a8d2d.js": "/precache-manifest.3878e58b0b69e8748a4a1178f81a8d2d.js",
+    "precache-manifest.8b5211b739090fd98678239e912c3e58.js": "/precache-manifest.8b5211b739090fd98678239e912c3e58.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.2110a780.chunk.css.map": "/static/css/main.2110a780.chunk.css.map",
     "static/media/Hadas3.jpg": "/static/media/Hadas3.d7884764.jpg",
@@ -17,7 +17,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b9980355.js",
-    "static/js/2.cdd9d003.chunk.js",
+    "static/js/2.2783cb75.chunk.js",
     "static/css/main.2110a780.chunk.css",
     "static/js/main.4669bb5f.chunk.js"
   ]
